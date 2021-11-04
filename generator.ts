@@ -7,9 +7,8 @@ export = {
       {
         name: 'name',
 				type: 'input',
-        message: 'What is the name of the new project',
+        message: 'What is the name of the project',
         default: `${path.basename(this.outDir)}`,
-        filter: val => val.toLowerCase(),
       },
       {
         name: 'description',
