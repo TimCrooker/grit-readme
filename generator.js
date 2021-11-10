@@ -9,9 +9,8 @@ module.exports = {
             {
                 name: 'name',
                 type: 'input',
-                message: 'What is the name of the new project',
+                message: 'What is the name of the project',
                 default: `${path_1.default.basename(this.outDir)}`,
-                filter: val => val.toLowerCase(),
             },
             {
                 name: 'description',
@@ -38,8 +37,8 @@ module.exports = {
                 name: 'website',
                 type: 'input',
                 message: 'The URL of your website',
-                default(data) {
-                    return `github.com/${data.answers.username}`;
+                default(answers) {
+                    return `github.com/${answers.username}`;
                 },
                 store: true
             }
