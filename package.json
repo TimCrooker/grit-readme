@@ -1,6 +1,6 @@
 {
 	"name": "grit-readme",
-	"version": "0.0.2",
+	"version": "0.0.4",
 	"description": "my awesome new Grit generator",
 	"repository": {
 		"url": "TimCrooker/grit-readme",
@@ -11,6 +11,10 @@
 	"files": [
 		"generator.js",
 		"template/**"
+	],
+	"keywords": [
+		"grit-generator",
+		"grit"
 	],
 	"scripts": {
 		"start": "grit . output",
